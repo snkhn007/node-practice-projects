@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: burlywood;
+    height: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+a:hover{
+    color: rgba(8, 7, 7, 0.3);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h2{
+    margin: 10px;
+}
+
+.box{
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 15px;
+}

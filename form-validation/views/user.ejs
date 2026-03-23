@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/user.css">
+    <!-- <script defer src="/js/userValidation"></script> -->
+</head>
+<body>
+    <nav>
+        <a href="/user">Home</a>
+        <a href="/display">Output</a>
+    </nav>
+    <header>
+    </header>
+    <main>
+        <h2>Enter Details</h2>
+        <!-- action="/user/submit" -->
+        <form  action="/user/submit" method="POST" id="myForm">
+            <div class="feild">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <p id="errorName"></p>
+            </div>
+            
+            <div class="feild">
+                <input type="text" name="email" id="email" placeholder="Enter your Email">
+                <p id="errorMail"></p>
+            </div>
+            
+            <div class="feild">
+                <input type="text" name="number" id="number" placeholder="Enter your Number">
+                <p id="errorNumber"></p>
+            </div>
+            
+            <div class="feild">
+                <input type="text" name="pass" id="pass" placeholder="Enter Password">
+                <p id="errorPass"></p>
+            </div>
+            <div class="feild">
+                <button type="submit"> Submit</button>
+            </div>        
+        </form>
+    </main>
+    
+    <script src="/js/userValidation.js"></script>
+</body>
+</html>

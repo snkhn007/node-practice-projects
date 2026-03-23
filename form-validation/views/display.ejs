@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/display.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="/user">Home</a>
+        <a href="/display">Output</a>
+    </nav>
+    <header>
+    </header>
+    <main>
+        <h2>Details</h2>
+        <!-- action="/user/submit" -->
+         <div class="box"></div>
+            <h2>Display Page</h2>
+
+            <% for(let i = 0; i < userDetails.length; i++) { %>
+
+                <p>Name: <%= userDetails[i].name %></p>
+                <p>Email: <%= userDetails[i].email %></p>
+                <p>Number: <%= userDetails[i].number %></p>
+                <p>Password: <%= userDetails[i].pass %></p>
+
+            <% } %>
+         </div>
+    </main>
+    
+</body>
+</html>

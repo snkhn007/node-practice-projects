@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!-- ----  -->
+ <%- include('partials/header') %>
     <link rel="stylesheet" href="/css/display.css">
+    <%- include('partials/title', {title : 'Display'}) %>
 </head>
 <body>
     
@@ -15,19 +12,17 @@
     <header>
     </header>
     <main>
-        <h2>Details</h2>
-        <!-- action="/user/submit" -->
-         <div class="box"></div>
-            <h2>Display Page</h2>
-
-            <% for(let i = 0; i < userDetails.length; i++) { %>
-
-                <p>Name: <%= userDetails[i].name %></p>
-                <p>Email: <%= userDetails[i].email %></p>
-                <p>Number: <%= userDetails[i].number %></p>
-                <p>Password: <%= userDetails[i].pass %></p>
-
-            <% } %>
+         <div class="container">
+             <% for(let i = 0; i < userDetails.length; i++) { %>
+              <div class="box">
+                 <h2>User Details: </h2>
+     
+                     <p><strong>Name: </strong><%= userDetails[i].name %></p>
+                     <p><strong>Email: </strong><%= userDetails[i].email %></p>
+                     <p><strong>Number: </strong><%= userDetails[i].number %></p>
+                     <p><strong>Password: </strong><%= userDetails[i].password %></p>
+                 </div>
+             <% } %>
          </div>
     </main>
     

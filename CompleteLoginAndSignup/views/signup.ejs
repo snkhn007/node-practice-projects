@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Sign In</h1>
+        <form action="/auth/signup" method="POST">
+            <div class="fields">
+                <label for="name">
+                    Name: <br>
+                    <input type="text" id="name" name="name" placeholder="Enter Name">
+                </label>
+            </div>
+            <div class="fields">
+                <label for="mail">
+                    Email: <br>
+                    <input type="text" id="mail" name="mail" placeholder="Enter Email">
+                </label>
+            </div>
+            <div class="fields">
+                <label for="pass">
+                    Password: <br>
+                    <input type="text" id="pass" name="pass" placeholder="Enter Password">
+                </label>
+            </div>
+            <div class="fields">
+                <button type="submit">Login In</button>
+            </div>
+            <p>Have a account already? 
+                <a href="/auth/login">Login here</a>
+            </p>
+            
+        </form>
+    </div>
+</body>
+</html>

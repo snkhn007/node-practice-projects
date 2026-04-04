@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Log In</h1>
+        <form action="/auth/login" method="POST">
+            <div class="fields">
+                <label for="mail">
+                    Email: <br>
+                    <input type="text" id="mail" name="mail" placeholder="Enter Email">
+                </label>
+            </div>
+            <div class="fields">
+                <label for="pass">
+                    Password: <br>
+                    <input type="text" id="pass" name="pass" placeholder="Enter Password">
+                </label>
+            </div>
+            <div class="fields">
+                <button type="submit">Login In</button>
+            </div>
+            <p>Do not have a account already? 
+                <a href="/auth/signup">signup here</a>
+            </p>
+            
+        </form>
+    </div>
+</body>
+</html>
